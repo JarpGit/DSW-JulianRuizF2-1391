@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+      body{
+        font-family: 'Poppins', sans-serif;
+      }
+      p{
+        font-size: 20px;
+      }
+      header {
+        padding-top: 2%;
+        padding-bottom: 2%;
+      }
+      #inicio{
+        padding-top: 2%;
+        padding-bottom: 2%;
+      }
+      #tema-seleccionado{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        background-color: rgb(135, 169, 250);
+      }
+      #mockup{
+        padding-top: 2%;
+        padding-bottom: 2%;
+        background-color: bisque;
+      }
+      #acerca-de{
+        padding-top: 2%;
+        padding-bottom: 2%;
+      }
+     nav {
+        position: fixed;        
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        background-color: #5c8cfd;
+        color: #fff;
+        text-align: center;
+      }
+      
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        height: 100%;
+      }
+      
+      nav li {
+        margin: 0 10px;                
+      } 
+      
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      #acerca-de{
+        margin-bottom: 75px;
+      }
+
+      footer{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto; /* Ajusta la altura según tus necesidades */
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        height: 300px;
+        width: 50%;
+        margin-left: 25%;
+        font-weight: bolder;
+      }
+
+      .item {
+        background-color: #868ff3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+      }
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Fase 2: Componente práctico</h1>
+    </header>
+    
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tema-seleccionado">CSS Grid</a></li>
+        <li><a href="#mockup">Mockup</a></li>
+        <li><a href="#acerca-de">Acerca de</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section id="inicio">
+        <h2>Bienvenidos al desarrollo de la fase 2</h2>
+        <p>
+          En este espacio se presentarán las evidencias de las actividades correspondientes al desarrollo de la página web en estilo
+          One Page, la consulta del tema CSS Grid y una breve aplicación del tema, la inclusión del mockup y el uso de las etiquetas semánticas en la creación del sitio.
+          .</p>
+      </section>
+      
+      <section id="tema-seleccionado">
+        <h2>CSS Grid</h2>
+        <p>
+          <h3>Grid container</h3>
+          <p>
+            Es el elemento que define el contenedor de la cuadrícula. Para crear una cuadrícula con CSS Grid, es necesario definir un elemento como grid container utilizando la propiedad display: grid.
+          </p>
+          <h3>Grid items</h3>
+          <p>
+            Son los elementos que se colocan dentro del grid container. Cada grid item se posiciona dentro de la cuadrícula utilizando líneas horizontales y verticales.
+          </p>
+          <h3>Grid lines</h3>
+          <p>
+            Son las líneas que definen los límites de las celdas en la cuadrícula. Las líneas horizontales se llaman grid rows, y las líneas verticales se llaman grid columns.
+          </p>
+          <h3>Grid tracks</h3>
+          <p>
+            Son los espacios entre dos líneas adyacentes en la cuadrícula, se dividen en filas (grid rows) y columnas (grid columns), y se utilizan para definir el tamaño de las celdas.
+          </p>
+          <h3>Grid gaps</h3>
+          <p>
+            Son los espacios en blanco entre las celdas de la cuadrícula. Se pueden definir gaps para las filas y columnas por separado utilizando las propiedades grid-row-gap y
+            grip-column-gap, o bien utilizando la propiedad grid-gap para definir ambos de una sola vez.
+          </p>
+          <h3>Grid lines naming</h3>
+          <p>
+            Es la técnica de nombras las líneas de la cuadrícula para facilitar la definición de las celdas. Se pueden nombrar las líneas utilizando la 
+            propiedad grid-templates-rows o grid-templates-columns, y luego referirse a ellas utilizando los nombres en lugar de números.
+          </p>
+          <h3>Grid areas</h3>
+          <p>
+            Son los bloques de celdas en la cuadrícula que se pueden agrupar y asignar un nombre para facilitar la definición del diseño. Las áreas se definen 
+            utilizando la propiedad grid-template-areas. 
+          </p>
+          <h3>Grid template</h3>
+          <p>
+            Es la estructura de la cuadrícula, que se define utilizando las propiedades grid-templates-rows y grid-templates-columns. La estructura se puede definir 
+            utilizando medidas absolutas, como pixeles, o medidas relativas como porcentajes.
+          </p>
+          <h3>Grid template shorthand</h3>
+          <p>
+            Es una forma abreviada de definir la estructura de la cuadrícula utilizando una sola propiedad: grid-template. Con esta propiedad se pueden definir
+          </p>
+
+          <img src="CSS Grid.jpg" alt="Explicación gráfica CSS Grid">
+        </p>
+        <h3>Ejemplo de uso</h3>
+        <div class="grid-container">
+          <div class="item item-1">1</div>
+          <div class="item item-2">2</div>
+          <div class="item item-3">3</div>
+          <div class="item item-4">4</div>
+          <div class="item item-5">5</div>
+          <div class="item item-6">6</div>
+          <div class="item item-7">7</div>
+          <div class="item item-8">8</div>
+          <div class="item item-9">9</div>
+        </div>        
+      </section>
+      
+      <section id="mockup">
+        <h2>Mockup</h2>
+        <p>Este es el contenido de la sección de mockup.</p>
+        <img src="Mockup.jpg" alt="Mockup de la actividad">
+      </section>
+      
+      <section id="acerca-de">
+        <h2>Acerca de</h2>
+        <p>
+          Julián Alberto Ruiz Piedrahíta
+          <br>
+          Escuela de Ciencias Básicas, Tecnología e Ingeniería, Universidad Nacional Abierta y a Distancia UNAD
+          <br>
+          301122: Diseño de Sitios Web
+          <br>
+          Prof. Josué Ignacio Ochoa Torres
+
+        </p>
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; 2023 Fase 2. Todos los derechos reservados.</p>
+      <p>Última actualización: 3 de marzo de 2023</p>
+    </footer>
+    
+  </body>
+</html>
