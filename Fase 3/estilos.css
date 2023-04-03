@@ -1,0 +1,44 @@
+
+
+
+/* Estilos para la barra de navegación */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Estilos para el encabezado */
+  header {
+    grid-area: A;
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+  }
+  
+  /* Estilos para el aside */
+  aside {
+    background-color: #f8f9fa;
+    padding: 1rem;
+  }
+  
+  /* Estilos para el menú del aside */
+  nav.nav {
+    margin-top: 1rem;
+  }
+  
+  /* Estilos para la sección principal */
+  main {
+    padding: 1rem;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #eee;
+    text-align: center;
+    padding: 1rem;
+  }
+  
