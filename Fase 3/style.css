@@ -57,3 +57,28 @@ header {
     margin: 5px;
     background-color: #4AF5CB;
   }
+  #tema-seleccionado{
+    text-align: center;
+    padding: 3%;
+  }
+  #tema-seleccionado h3{
+    text-align: left;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    height: 300px;
+    width: 50%;
+    margin-left: 25%;
+    font-weight: bolder;
+  }
+  .item {
+    background-color: #868ff3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #4AF5CB;
+  }
